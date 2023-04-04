@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(106, 112, 128);
+            color: aliceblue;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado...</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="teste1">Testando 1</div>
+    <div name="teste2">Testando 2</div>
+    <div class="teste3">Testando 3</div>
+    <script>
+        //Selecionando elementos DOM por TagName:--------------------------------------------
+        var p1 = window.document.getElementsByTagName('p')[1]   //'Pega' o elemento parágrafo que está na 1ª posição (começa por 0) e insere na variável p1.
+        p1.style.color = 'blue'     //Modifica a cor de p1 para azul.
+        document.write(p1.innerText)  //Escreve o texto que está em p1 na tela sem a formatação.
+        window.document.write(p1.innerHTML) //Escreve o texto que está em p1 na tela com a formatação.
+        var corpo = window.document.body    //'Pega' o elemento corpo do documento e inseri na variárel 'corpo'.
+        corpo.style.background = 'black'    //Modifica a cor de fundo do corpo do documento para preto.
+        //------------------------------------------------------------------------------------
+        //Selecionando elementos DOM por ID:--------------------------------------------------
+        var d = window.document.getElementById('teste1')   //Pega o elemento div que possue o id 'msg' e insere na variável.
+        d.style.background = 'green'    //Modifica a cor de fundo de d.
+        d.innerText = 'Testando'    //Modifica o texto de d.
+        //------------------------------------------------------------------------------------
+        //Selecionando elementos DOM por Name:------------------------------------------------
+        var d = window.document.getElementsByName('teste2')[0]  //Pega o elemento div que tem o nome 'teste 2' que está na posição 0 (começa com 0).
+        d.innerText = 'Olá!'    //Modifica o texto de d.
+        //------------------------------------------------------------------------------------
+        //Selecionando elementos DOM por Class:-----------------------------------------------
+        var d = window.document.getElementsByClassName('teste3')[0] //Pega o elemento div que tem a classe 'teste3' que está na posição 0.
+        d.style.color = 'pink'  //Modifica a cor de d para rosa.
+        //Selecionando elementos querySelector:------------------------------------------------
+        var d = window.document.querySelector('div#teste1') //Pega a div que tem o Id teste1 (sempre que se deseja pegar o Id se usa a hashtag #, se for a classe, usa-se o ponto .).
+        d.style.color = 'grey'  //Modifica a cor de d para cinza.
+        var d = window.document.querySelector('div.teste3') //Pega a div que tem a classe teste3 (sempre que se deseja pegar o Id se usa a hashtag #, se for a classe, usa-se o ponto .).
+        d.style.background = 'blue' //Modifica a cor de d para azul.
+        //--------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

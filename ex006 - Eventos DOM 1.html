@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: 'green';
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "area">
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area')  //'Pega' a div e armazena na variável a.
+        
+        a.addEventListener('click', clicar)     //Monitora o evento click.
+        a.addEventListener('mouseenter', entrar)    //Monitora o evento mouseenter.
+        a.addEventListener('mouseout', sair)    //Monitora o evento mouseout.
+
+        function clicar() {     //Função disparada pelo evento onclick.
+            a.innerText = 'Clicou!'     //Muda o texto da div.
+            a.style.background = 'red'  //Modifica a cor de fundo da div.
+        }
+        function entrar() {     //Função disparada pelo evento onmouseenter.
+            a.innerText = 'Entrou!' //Muda o texto da div.
+        }
+        function sair() {    //Função disparada pelo evento onmouseout.
+            a.innerText = 'Saiu!'   //Muda o texto da div.
+            a.style.background = 'green'    //Modifica a cor de fundo da div.
+        }
+    </script>
+</body>
+</html>

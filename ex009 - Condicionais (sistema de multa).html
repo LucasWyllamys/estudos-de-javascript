@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txt_velocidade" id="txt_velocidade">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="resposta">
+
+    </div>
+    <script>
+        function calcular() {   //Função que calcula se está multado ou não.
+            var txt_vel = window.document.querySelector('input#txt_velocidade')     //Pega o objeto input de id/# = txt_velocidade.
+            var vel = Number(txt_vel.value)     //Converte o valor da input para número.
+            var resp = window.document.getElementById('resposta')       //Pega o objeto div de id = reposta.
+            resp.innerHTML = `<p>Sua velocidade atual é de ${vel}km/h.</p>`     //Modifica o texto do objeto div que está armazenado na variável.
+                if(vel > 60) {
+                    resp.innerHTML += "<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>"     //Modifica o texto do objeto div que está armazenado na variável.
+                } else {
+                    resp.innerHTML += "<p>Dirija sempre com cindo de segurança!</p>"       //Modifica o texto do objeto div que está armazenado na variável.
+                }
+            resp.innerHTML += "<p>Dirija com atenção!</p>"  //Modifica o texto do objeto div que está armazenado na variável.
+        }
+    </script>
+</body>
+</html>
