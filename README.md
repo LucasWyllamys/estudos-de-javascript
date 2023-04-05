@@ -1,2 +1,3 @@
 # aprendendo_javascript
- **Exemplos e exercícios** para estudo de *JavaScript*.
+
+Exemplos e exercícios para estudo de JavaScript.
