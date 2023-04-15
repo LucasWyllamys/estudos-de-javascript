@@ -1,7 +1,7 @@
 function contar() {
-    let i = document.getElementById('inicio').value    //Pega o valor do input number de id = inicio (como string).
-    let f = document.getElementById('fim').value
-    let p = document.getElementById('passo').value
+    let i = document.getElementById('txt_inicio').value    //Pega o valor do input number de id = inicio (como string).
+    let f = document.getElementById('txt_fim').value
+    let p = document.getElementById('txt_passo').value
     let result = document.getElementById('resultado')   //Pega a div com id = resultado.
     if(i.length == 0 || f.length == 0 || p.length == 0) {
         window.alert('[ERRO] Faltam dados!')    //Janela de alerta.
