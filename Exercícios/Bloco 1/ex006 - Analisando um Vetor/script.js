@@ -1,6 +1,6 @@
-let vet = []
-let result = document.getElementById("result")
-let select = document.getElementById('addnum')        //Atribui o elemento DOM select a variável select.
+var vet = []
+var result = document.getElementById("result")
+var select = document.getElementById('addnum')        //Atribui o elemento DOM select a variável select.
 
 function entre_1_100(n) {   //Verifica se o número está entre 1 e 100.
     if(n >= 1 && n <= 100) {
