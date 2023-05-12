@@ -1,5 +1,12 @@
-var createCounter = function(n) {
-    return n++
+const p = document.querySelector('p#paragrafo')
+var c = 0
+
+function contar() {
+    c++
+    p.innerHTML = `O contador está com <mark>${c}</mark> cliques.`
 }
 
-console.log(createCounter(10))
+function zerar() {
+    c = 0
+    p.innerHTML = `O contador está com <mark>${c}</mark> cliques.`
+}
