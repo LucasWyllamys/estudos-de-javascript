@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1, h2 {
+    font-family: cursive;
+}
+
+input[type=number] {
+    font-size: 12pt;
+}
+
+button {
+    font-size: 16px;
+    width: 70px;
+    height: 25px;
+    background-color: #008000;
+    color: white;
+}
+
