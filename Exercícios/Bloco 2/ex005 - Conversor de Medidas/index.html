@@ -7,12 +7,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="msg()">
     <h1>Conversor de Medidas</h1>
-    <p>
+    <div>
         <button onclick="inicio_distancia()">Converter Distância</button>
         <button onclick="inicio_temperatura()">Converter Temperatura</button>
-    </p>
+        <button onclick="inicio_moeda()">Converter Real p Dólar</button>
+    </div>
     <p id="out">Clique no botão acima para iniciar.</p>
     <script src="script.js"></script>
 </body>
