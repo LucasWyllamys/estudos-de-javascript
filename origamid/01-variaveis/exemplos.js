@@ -35,7 +35,6 @@ var frase = 'Romário fez ' + gols + ' gols'
 console.log(frase)  // Saída: Romário fez 1000 gols
 
 // Como delimitar strings
-
 'JavaScript é "super" fácil';
 "JavaScript é 'super' fácil";
 "JavaScript é \"super\" fácil";     // O contra barra (\) anula a função das aspas ("") quando é inserido antes delas
