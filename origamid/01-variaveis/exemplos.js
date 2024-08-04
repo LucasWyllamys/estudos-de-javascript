@@ -8,7 +8,7 @@ var totalComprado = 5
 var totalPreco = totalComprado * preco
 console.log(totalPreco)
 
-//O valor de uma variável pode ser modificado se ela não for declarada como const
+// O valor de uma variável pode ser modificado se ela não for declarada como const
 var time = 'Vasco'
 time = 'Flamengo'
 console.log(time)
@@ -39,7 +39,7 @@ console.log(frase)  // Saída: Romário fez 1000 gols
 "JavaScript é 'super' fácil";
 "JavaScript é \"super\" fácil";     // O contra barra (\) anula a função das aspas ("") quando é inserido antes delas
 `JavaScript é "super" fácil"`;
-//"JavaScript é "super" fácil";       // Inválido
+//"JavaScript é "super" fácil";     // Inválido
 
 // Como usar template string
 // Use a crase (``) para delimitar a string e use o placeholder ${} dentro da string para sinalizar a variável.
