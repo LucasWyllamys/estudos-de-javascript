@@ -1,0 +1,12 @@
+// Operadores de comparação: As expressões de comparação abaixo sempre retornam um valor booleano.
+10 > 5          // true (maior)
+20 < 10         // false (menor)
+10 <= 10        // true (menor ou igual)
+10 >= 11        // false (maior ou igual)
+10 == '10'      // true (igual) (verifica o conteúdo sem levar o tipo de dado em consideração)
+10 == 10        // true (igual)
+10 === '10'     // false (igual restrito) (verifica o conteúdo e o tipo de dado)
+10 === 10       // true (igual restrito) (verifica o conteúdo e o tipo de dado)
+10 != 15        // true (diferente) (verifica o conteúdo sem levar o tipo de dado em consideração)
+10 != '10'      // false (diferente) (verifica o conteúdo sem levar o tipo de dado em consideração)
+10 !== '10'     // true (diferente) (verifica o conteúdo e o tipo de dado)
