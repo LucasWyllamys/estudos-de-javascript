@@ -13,6 +13,7 @@ switch (corFavorita) {
     case 'Amrelo':
         console.log('Olhe para o sol.')
         break
-    default:
+    default:                                // Valor padrão caso nenhum dos outros seja retornado.
         console.log('Feche os olhos.')
 }
+
