@@ -19,3 +19,17 @@ function corFavorita(cor) {
 }
 
 console.log(corFavorita())  // Saída: Você não gosta de nada
+
+// Uma função pode retornar qualquer tipo de dado e até outras funções. 
+// Cuidado, retornar diferentes tipos de dados na mesma função não é uma boa ideia.
+function terceiraIdade(idade) {
+    if (typeof idade !== 'number') {
+        return 'Informe sua idade!'
+    } else if (idade >= 60) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(terceiraIdade('teste!'))    // Saída: Informe sua idade!
