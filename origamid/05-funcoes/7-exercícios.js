@@ -1,10 +1,6 @@
-// Crie uma função para verificar se um valor é Truthy
-function valorETruthy(valor) {
-    if (valor) {
-        return true
-    } else {
-        return false
-    }
+// Crie uma função para verificar se um valor é Truthy or Falsy
+function TrueOrFalse(valor) {
+    return !!valor
 }
 
 /* Crie uma função matemática que retorne o perímetro de um quadrado
@@ -15,31 +11,31 @@ function perimetroQuadrado(lado) {
 
 // Crie uma função que retorne o seu nome completo, ela deve possuir os parâmetros: nome e sobrenome
 function nomeCompleto(nome, sobrenome) {
-    return nome + ' ' + sobrenome
+    return `${nome} ${sobrenome}`
 }
 
 console.log(nomeCompleto('Lucas', 'Wyllamys'))
 
 // Crie uma função que verifica se um número é par
-function numeroEPar(numero) {
+function IsEven(numero) {
     if (numero % 2 === 0) {
-        return 'É par!'
+        return true
     } else {
-        return 'É ímpar!'
+        return false
     }
 }
 
-console.log(numeroEPar(5))
+console.log(IsEven(5))
 
 // Crie uma função que retorne o tipo de dado do argumento passado nela (typeof)
-function retornaTipo(valor) {
+function tipoDado(valor) {
     return typeof valor
 }
 
-console.log(retornaTipo('teste'))
+console.log(tipoDado('teste'))
 
 /* addEventListener é uma função nativa do JavaScript
-o primeiro parâmetro é o evento que ocorre e o segundo o Callback
+o primeiro parâmetro é o evento que ocorre e o segundo o Callback (ação)
 utilize essa função para mostrar no console o seu nome completo
 quando o evento 'click' ocorrer. */
 addEventListener('click', function() {
