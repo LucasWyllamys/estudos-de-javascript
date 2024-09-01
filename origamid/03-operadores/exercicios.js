@@ -24,3 +24,18 @@ var numero = +'80' / 2;
 var unidade = 'kg';
 var peso = numero + unidade; // '80kg'
 console.log(peso)
+
+// Some 500 ao valor de scroll abaixo,
+// atribuindo o novo valor a scroll
+var scroll = 1000;
+scroll += 500   
+console.log(scroll)     // Saída: 1500
+
+// Usando o operador ternário, atribua true para a variável darCredito,
+// caso o cliente possua carro e casa.
+// E false caso o contrário.
+var possuiCarro = true;
+var possuiCasa = false;
+var darCredito;
+darCredito = (possuiCarro && possuiCasa)
+console.log(darCredito)     // Saída: true
