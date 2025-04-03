@@ -23,10 +23,6 @@
     </div>
     <script>
         var a = window.document.getElementById('area')  //'Pega' a div e armazena na variável a.
-        
-        a.addEventListener('click', clicar)     //Monitora o evento click.
-        a.addEventListener('mouseenter', entrar)    //Monitora o evento mouseenter.
-        a.addEventListener('mouseout', sair)    //Monitora o evento mouseout.
 
         function clicar() {     //Função disparada pelo evento onclick.
             a.innerText = 'Clicou!'     //Muda o texto da div.
@@ -39,6 +35,10 @@
             a.innerText = 'Saiu!'   //Muda o texto da div.
             a.style.background = 'green'    //Modifica a cor de fundo da div.
         }
+
+        a.addEventListener('click', clicar)     //Monitora o evento click.
+        a.addEventListener('mouseenter', entrar)    //Monitora o evento mouseenter.
+        a.addEventListener('mouseout', sair)    //Monitora o evento mouseout.
     </script>
 </body>
 </html>
